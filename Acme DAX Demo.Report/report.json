@@ -1,0 +1,518 @@
+{
+  "config": "{\"version\":\"5.37\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY21SU11\",\"version\":\"5.29\",\"type\":2}},\"activeSectionIndex\":10,\"bookmarks\":[{\"displayName\":\"QA\",\"name\":\"Bookmark186a14c984158f2b0816\",\"explorationState\":{\"version\":\"1.3\",\"activeSection\":\"ReportSectionb88ffd456e810b51aca6\",\"sections\":{\"ReportSectionb88ffd456e810b51aca6\":{\"visualContainers\":{}}},\"objects\":{\"merge\":{\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}},\"options\":{\"targetVisualNames\":[\"e4f819a7a8d33e7b2437\"],\"applyOnlyToTargetVisuals\":true}},{\"displayName\":\"TxtImageGroup\",\"name\":\"Bookmarka874bafd085eca4ea70e\",\"explorationState\":{\"version\":\"1.3\",\"activeSection\":\"ReportSection0942fdca70793aac320e\",\"sections\":{\"ReportSection0942fdca70793aac320e\":{\"visualContainers\":{}}},\"objects\":{\"merge\":{\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}},\"options\":{\"targetVisualNames\":[],\"applyOnlyToTargetVisuals\":true}}],\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"exportDataMode\":1,\"allowDataPointLassoSelect\":true,\"filterPaneHiddenInEditMode\":false},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY21SU11",
+            "path": "BaseThemes/CY21SU11.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{\"visibility\":0}",
+      "displayName": "Demo 1 - Context",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"613d8e5e8510e8ba363a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":999.918200408998,\"y\":535.9369307666526,\"width\":280.081799591002,\"height\":184.0630692333474,\"z\":2000}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Calculations.Sales by Year\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Calculations\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Sales by Year\"},\"Name\":\"Calculations.Sales by Year\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Sales by Year\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 184.06,
+          "width": 280.08,
+          "x": 999.92,
+          "y": 535.94,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"c012fb600de857a1a030\",\"layouts\":[{\"id\":0,\"position\":{\"x\":31.064533921676777,\"y\":10.590182018753447,\"z\":0,\"width\":790.7335907335906,\"height\":349.4760066188637}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"Calendar.Year\",\"active\":true},{\"queryRef\":\"Calendar.Year Month\",\"active\":true}],\"Values\":[{\"queryRef\":\"Calculated Table.Sales And Tax\"},{\"queryRef\":\"Calculated Table.Sales Total\"},{\"queryRef\":\"Calculated Table.Sales Total Sum\"},{\"queryRef\":\"Calculated Table.Sales by Year\"},{\"queryRef\":\"Calculated Table.Prior Year Sales\"},{\"queryRef\":\"Calculations.Previous Year Sales Price\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c1\",\"Entity\":\"Calculations\",\"Type\":0},{\"Name\":\"c\",\"Entity\":\"Calendar\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Year\"},\"Name\":\"Calendar.Year\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Property\":\"Sales Total Sumx\"},\"Name\":\"Calculated Table.Sales Total\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Property\":\"Sales by Year\"},\"Name\":\"Calculated Table.Sales by Year\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Property\":\"Prior Year Sales\"},\"Name\":\"Calculated Table.Prior Year Sales\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Year Month\"},\"Name\":\"Calendar.Year Month\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Property\":\"Sales Total Sum\"},\"Name\":\"Calculated Table.Sales Total Sum\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Property\":\"Sales And Tax\"},\"Name\":\"Calculated Table.Sales And Tax\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Property\":\"Previous Year Sales Price\"},\"Name\":\"Calculations.Previous Year Sales Price\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Property\":\"Sales by Year\"}}}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 349.48,
+          "width": 790.73,
+          "x": 31.06,
+          "y": 10.59,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"e6ae4b4633a859cb02a1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":999.918200408998,\"y\":20.94069529652352,\"z\":1000,\"width\":280.08179959100204,\"height\":280.08179959100204}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Calendar.Year\",\"active\":true},{\"queryRef\":\"Calendar.Year Month\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Calendar\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Year Month\"},\"Name\":\"Calendar.Year Month\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Year\"},\"Name\":\"Calendar.Year\"}]},\"expansionStates\":[{\"roles\":[\"Values\"],\"levels\":[{\"queryRefs\":[\"Calendar.Year\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Calendar\"}},\"Property\":\"Year\"}}],\"isPinned\":true},{\"queryRefs\":[\"Calendar.Year Month\"],\"isCollapsed\":true,\"isPinned\":true}],\"root\":{\"identityValues\":null}}],\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Calendar\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Year\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"2021L\"}}]]}}}]}}}}]},\"cachedFilterDisplayItems\":[{\"id\":{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Calendar\"}},\"Property\":\"Year\"}},\"Right\":{\"Literal\":{\"Value\":\"2021L\"}}}}},\"displayName\":\"2021\"}]}}",
+          "filters": "[]",
+          "height": 280.08,
+          "width": 280.08,
+          "x": 999.92,
+          "y": 20.94,
+          "z": 1000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Page 5",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection1c5109e82b26a08b7777",
+      "ordinal": 12,
+      "visualContainers": [],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "RANKX",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection3cdb022600a15e85d9d0",
+      "ordinal": 7,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"d40f5a9a80e01343106b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":125.67015995587424,\"y\":133.43629343629343,\"z\":0,\"width\":434.19746276889134,\"height\":350.1820187534473}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"City.Sales Territory\"},{\"queryRef\":\"Calculations.Sales Total Sum\"},{\"queryRef\":\"Calculations.RANKX Territory\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Location\",\"Type\":0},{\"Name\":\"c1\",\"Entity\":\"Calculations\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Sales Territory\"},\"Name\":\"City.Sales Territory\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Property\":\"Sales Total Sum\"},\"Name\":\"Calculations.Sales Total Sum\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Property\":\"RANKX Territory\"},\"Name\":\"Calculations.RANKX Territory\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Property\":\"RANKX Territory\"}}}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 350.18,
+          "width": 434.20,
+          "x": 125.67,
+          "y": 133.44,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Userelationship",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection4af3a1c5356e60001ac0",
+      "ordinal": 4,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"32edf1244506730b121c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1102.794591113973,\"y\":6.593689632968448,\"z\":0,\"width\":165.66645202833226,\"height\":500.296200901481,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Calendar.Year\",\"active\":true},{\"queryRef\":\"Calendar.Qtr Number\",\"active\":true},{\"queryRef\":\"Calendar.Month Name\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Calendar\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Year\"},\"Name\":\"Calendar.Year\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Qtr Number\"},\"Name\":\"Calendar.Qtr Number\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Month Name\"},\"Name\":\"Calendar.Month Name\"}]},\"expansionStates\":[{\"roles\":[\"Values\"],\"levels\":[{\"queryRefs\":[\"Calendar.Year\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Calendar\"}},\"Property\":\"Year\"}}],\"isPinned\":true},{\"queryRefs\":[\"Calendar.Qtr Number\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Calendar\"}},\"Property\":\"Qtr Number\"}}],\"isPinned\":true},{\"queryRefs\":[\"Calendar.Month Name\"],\"isCollapsed\":true,\"isPinned\":true}],\"root\":{\"identityValues\":null,\"children\":[{\"identityValues\":[{\"Literal\":{\"Value\":\"2022L\"}}],\"children\":[{\"identityValues\":[{\"Literal\":{\"Value\":\"'Qtr 2'\"}}],\"isToggled\":true}]},{\"identityValues\":[{\"Literal\":{\"Value\":\"2019L\"}}],\"children\":[{\"identityValues\":[{\"Literal\":{\"Value\":\"'Qtr 4'\"}}],\"isToggled\":true}]},{\"identityValues\":[{\"Literal\":{\"Value\":\"null\"}}],\"isToggled\":true}]}}],\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Calendar\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Year\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"2020L\"}}]]}}}]}}}}]},\"cachedFilterDisplayItems\":[{\"id\":{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Calendar\"}},\"Property\":\"Year\"}},\"Right\":{\"Literal\":{\"Value\":\"2020L\"}}}}},\"displayName\":\"2020\"}]}}",
+          "filters": "[]",
+          "height": 500.30,
+          "width": 165.67,
+          "x": 1102.79,
+          "y": 6.59,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"3e70c9d0ccc48e419c35\",\"layouts\":[{\"id\":0,\"position\":{\"x\":50.276883451384414,\"y\":54.397939471989694,\"z\":1000,\"width\":774.7585318737925,\"height\":640.4121056020605,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Calendar.Year Month\"},{\"queryRef\":\"Calculations.Total Sales Price1\"},{\"queryRef\":\"Calculations.Userelationship Previous Year Calc\"},{\"queryRef\":\"Calculations.Total Sales Price\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c1\",\"Entity\":\"Calendar\",\"Type\":0},{\"Name\":\"c\",\"Entity\":\"Calculations\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Property\":\"Year Month\"},\"Name\":\"Calendar.Year Month\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Total Sales Price Delivery\"},\"Name\":\"Calculations.Total Sales Price\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Previous Year Sales Price\"},\"Name\":\"Calculations.Userelationship Previous Year Calc\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Total Sales Price\"},\"Name\":\"Calculations.Total Sales Price1\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Previous Year Sales Price\"}}}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 640.41,
+          "width": 774.76,
+          "x": 50.28,
+          "y": 54.40,
+          "z": 1000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Page 2",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection5a4489c89b5d4e1860aa",
+      "ordinal": 6,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"96551db9ce7806d5a3d8\",\"layouts\":[{\"id\":0,\"position\":{\"x\":47.30281301709873,\"y\":76.95532266960838,\"z\":0,\"width\":902.9895201323773,\"height\":326.8836183121897}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Calculations.Sales Total Sum\"},{\"queryRef\":\"Calculations.Commission Sales\"},{\"queryRef\":\"Calculations.Commission SalesX\"},{\"queryRef\":\"Employee.Employee Full Name\"},{\"queryRef\":\"Customer.Postal Code\"},{\"queryRef\":\"City.Sales Territory\"},{\"queryRef\":\"Calendar.Month Name\"},{\"queryRef\":\"Calendar.Year\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Calculations\",\"Type\":0},{\"Name\":\"c1\",\"Entity\":\"Calendar\",\"Type\":0},{\"Name\":\"c2\",\"Entity\":\"Location\",\"Type\":0},{\"Name\":\"c3\",\"Entity\":\"Customer\",\"Type\":0},{\"Name\":\"e\",\"Entity\":\"Employee\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Sales Total Sum\"},\"Name\":\"Calculations.Sales Total Sum\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Property\":\"Year\"},\"Name\":\"Calendar.Year\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c2\"}},\"Property\":\"Sales Territory\"},\"Name\":\"City.Sales Territory\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Property\":\"Month Name\"},\"Name\":\"Calendar.Month Name\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c3\"}},\"Property\":\"Postal Code\"},\"Name\":\"Customer.Postal Code\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"Employee Full Name\"},\"Name\":\"Employee.Employee Full Name\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Total Profit by SalesX\"},\"Name\":\"Calculations.Commission SalesX\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Total Profit by Sales\"},\"Name\":\"Calculations.Commission Sales\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Total Profit by Sales\"}}}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 326.88,
+          "width": 902.99,
+          "x": 47.30,
+          "y": 76.96,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Context Transition",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection6325ac9980b50eb94a2a",
+      "ordinal": 3,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"93f5b84450650d62680d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1102.794591113973,\"y\":6.593689632968448,\"z\":0,\"width\":165.66645202833226,\"height\":243.1423052157115,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Calendar.Year\",\"active\":true},{\"queryRef\":\"Calendar.Qtr Number\",\"active\":true},{\"queryRef\":\"Calendar.Month Name\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Calendar\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Year\"},\"Name\":\"Calendar.Year\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Qtr Number\"},\"Name\":\"Calendar.Qtr Number\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Month Name\"},\"Name\":\"Calendar.Month Name\"}]},\"expansionStates\":[{\"roles\":[\"Values\"],\"levels\":[{\"queryRefs\":[\"Calendar.Year\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Calendar\"}},\"Property\":\"Year\"}}],\"isPinned\":true},{\"queryRefs\":[\"Calendar.Qtr Number\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Calendar\"}},\"Property\":\"Qtr Number\"}}],\"isPinned\":true},{\"queryRefs\":[\"Calendar.Month Name\"],\"isCollapsed\":true,\"isPinned\":true}],\"root\":{\"identityValues\":null,\"children\":[{\"identityValues\":[{\"Literal\":{\"Value\":\"2022L\"}}],\"children\":[{\"identityValues\":[{\"Literal\":{\"Value\":\"'Qtr 2'\"}}],\"isToggled\":true}]},{\"identityValues\":[{\"Literal\":{\"Value\":\"2019L\"}}],\"isToggled\":true,\"children\":[{\"identityValues\":[{\"Literal\":{\"Value\":\"'Qtr 4'\"}}],\"isToggled\":true}]}]}}],\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Calendar\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Year\"}},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Qtr Number\"}},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Month Name\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"2019L\"}},{\"Literal\":{\"Value\":\"'Qtr 4'\"}},{\"Literal\":{\"Value\":\"'October'\"}}]]}}}]}}}}]},\"filterExpressionMetadata\":{\"expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Calendar\"}},\"Property\":\"Year\"}},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Calendar\"}},\"Property\":\"Qtr Number\"}},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Calendar\"}},\"Property\":\"Month Name\"}}],\"cachedValueItems\":[{\"identities\":[{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Calendar\"}},\"Property\":\"Year\"}},\"Right\":{\"Literal\":{\"Value\":\"2019L\"}}}}},{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Calendar\"}},\"Property\":\"Qtr Number\"}},\"Right\":{\"Literal\":{\"Value\":\"'Qtr 4'\"}}}}},{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Calendar\"}},\"Property\":\"Month Name\"}},\"Right\":{\"Literal\":{\"Value\":\"'October'\"}}}}}],\"valueMap\":{\"0\":\"2019\",\"1\":\"Qtr 4\",\"2\":\"October\"}}]}}}",
+          "filters": "[]",
+          "height": 243.14,
+          "width": 165.67,
+          "x": 1102.79,
+          "y": 6.59,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"9a75738ea1b92780054c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":82.4211204121056,\"y\":60.16741790083709,\"z\":1000,\"width\":436.0077269800386,\"height\":318.96973599484863,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Calculations.Big Sales\"},{\"queryRef\":\"Customer.Customer\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Calculations\",\"Type\":0},{\"Name\":\"c1\",\"Entity\":\"Customer\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Big Sales\"},\"Name\":\"Calculations.Big Sales\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Property\":\"Customer\"},\"Name\":\"Customer.Customer\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 318.97,
+          "width": 436.01,
+          "x": 82.42,
+          "y": 60.17,
+          "z": 1000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Filter 2",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection6be144fa6701ba76c7db",
+      "ordinal": 2,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"11ac1b3be6489373e054\",\"layouts\":[{\"id\":0,\"position\":{\"x\":22.778541953232462,\"y\":426.85006877579093,\"z\":1000,\"width\":546.6850068775791,\"height\":293.14993122420907}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Location.Subregion\"},{\"queryRef\":\"Location.Sales Territory\"},{\"queryRef\":\"Products.Color\"},{\"queryRef\":\"Calculations.Filter ALL Great Lakes Sales\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"l\",\"Entity\":\"Location\",\"Type\":0},{\"Name\":\"p\",\"Entity\":\"Products\",\"Type\":0},{\"Name\":\"c\",\"Entity\":\"Calculations\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"Subregion\"},\"Name\":\"Location.Subregion\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"Sales Territory\"},\"Name\":\"Location.Sales Territory\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Color\"},\"Name\":\"Products.Color\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Filter ALL Great Lakes Sales\"},\"Name\":\"Calculations.Filter ALL Great Lakes Sales\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Color\"}}}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 293.15,
+          "width": 546.68,
+          "x": 22.78,
+          "y": 426.85,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"6dc072d08d02c09472aa\",\"layouts\":[{\"id\":0,\"position\":{\"x\":580,\"y\":427,\"width\":547,\"height\":293,\"z\":3000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Location.Sales Territory\"},{\"queryRef\":\"Calculations.Total Profit by SalesX\"},{\"queryRef\":\"Calculations.Total Profit by SalesX Nested\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Calculations\",\"Type\":0},{\"Name\":\"l\",\"Entity\":\"Location\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Total Profit by SalesX\"},\"Name\":\"Calculations.Total Profit by SalesX\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Total Profit by SalesX Nested\"},\"Name\":\"Calculations.Total Profit by SalesX Nested\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"Sales Territory\"},\"Name\":\"Location.Sales Territory\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 293.00,
+          "width": 547.00,
+          "x": 580.00,
+          "y": 427.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"88d313bf0e1a32cb4879\",\"layouts\":[{\"id\":0,\"position\":{\"x\":839.8349381017882,\"y\":49.518569463548836,\"z\":2000,\"width\":428.8308115543329,\"height\":346.6299862448418}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Location.Sales Territory\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"l\",\"Entity\":\"Location\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"Sales Territory\"},\"Name\":\"Location.Sales Territory\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{}}]}}}",
+          "filters": "[]",
+          "height": 346.63,
+          "width": 428.83,
+          "x": 839.83,
+          "y": 49.52,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"a2eeab5cb1181c3e8841\",\"layouts\":[{\"id\":0,\"position\":{\"x\":22.778541953232462,\"y\":70.31636863823934,\"z\":0,\"width\":646.7125171939477,\"height\":318.8995873452545}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Location.Sales Territory\"},{\"queryRef\":\"Calculations.Sales Total Sum\"},{\"queryRef\":\"Calculations.Great Lakes Sales\"},{\"queryRef\":\"Calculations.Filter ALL Great Lakes Sales\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Calculations\",\"Type\":0},{\"Name\":\"l\",\"Entity\":\"Location\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"Sales Territory\"},\"Name\":\"Location.Sales Territory\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Sales Total Sum\"},\"Name\":\"Calculations.Sales Total Sum\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Great Lakes Sales\"},\"Name\":\"Calculations.Great Lakes Sales\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Filter ALL Great Lakes Sales\"},\"Name\":\"Calculations.Filter ALL Great Lakes Sales\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 318.90,
+          "width": 646.71,
+          "x": 22.78,
+          "y": 70.32,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Color",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection76aa5f72ac80ac9ca103",
+      "ordinal": 10,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"0811035f41787c037ae0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":870.9677419354839,\"y\":371.61290322580646,\"z\":2000,\"width\":409.0322580645161,\"height\":225.80645161290323}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Location.Sales Territory\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"l\",\"Entity\":\"Location\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"Sales Territory\"},\"Name\":\"Location.Sales Territory\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{}}]}}}",
+          "filters": "[]",
+          "height": 225.81,
+          "width": 409.03,
+          "x": 870.97,
+          "y": 371.61,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"acc999c7973c114086ab\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10.32258064516129,\"y\":0,\"z\":0,\"width\":409.0322580645161,\"height\":483.8709677419355}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Location.Sales Territory\"},{\"queryRef\":\"Calculations.Remove Filter\"},{\"queryRef\":\"Products.Color\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Calculations\",\"Type\":0},{\"Name\":\"p\",\"Entity\":\"Products\",\"Type\":0},{\"Name\":\"l\",\"Entity\":\"Location\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Remove Filter\"},\"Name\":\"Calculations.Remove Filter\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Color\"},\"Name\":\"Products.Color\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"Sales Territory\"},\"Name\":\"Location.Sales Territory\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 483.87,
+          "width": 409.03,
+          "x": 10.32,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"f9f79eb32a15c1eae88e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":870.9677419354839,\"y\":16.774193548387096,\"z\":1000,\"width\":409.0322580645161,\"height\":225.80645161290323}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Products.Color\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"Products\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Color\"},\"Name\":\"Products.Color\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"Products\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Color\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Gray'\"}}]]}}}]}}}}]}}}",
+          "filters": "[]",
+          "height": 225.81,
+          "width": 409.03,
+          "x": 870.97,
+          "y": 16.77,
+          "z": 1000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "All and Remove",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection7de800c4bd0694e0cd73",
+      "ordinal": 5,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"4b4ae05628cc80986210\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1032.798690671031,\"y\":0,\"z\":3000,\"width\":247.20130932896888,\"height\":298.8761593016912}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"City.Sales Territory\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Location\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Sales Territory\"},\"Name\":\"City.Sales Territory\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Location\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Sales Territory\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Southeast'\"}}]]}}}]}}}}]}}}",
+          "filters": "[]",
+          "height": 298.88,
+          "width": 247.20,
+          "x": 1032.80,
+          "y": 0.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"5353a9e8d09b18a27498\",\"layouts\":[{\"id\":0,\"position\":{\"x\":990.9001636661211,\"y\":483.92798690671026,\"z\":6000,\"width\":289.09983633387884,\"height\":186.44844517184941}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Calendar.Year\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Calendar\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Year\"},\"Name\":\"Calendar.Year\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 186.45,
+          "width": 289.10,
+          "x": 990.90,
+          "y": 483.93,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"7bafbf1f3c94234c62c6\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10,\"y\":494,\"width\":561,\"height\":226,\"z\":1000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Customer.Buying Group\"},{\"queryRef\":\"Calculations.Total Quantity\"},{\"queryRef\":\"Calculations.Quantity all Regions\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Customer\",\"Type\":0},{\"Name\":\"c1\",\"Entity\":\"Calculations\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Buying Group\"},\"Name\":\"Customer.Buying Group\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Property\":\"Total Quantity\"},\"Name\":\"Calculations.Total Quantity\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Property\":\"Quantity all Territories\"},\"Name\":\"Calculations.Quantity all Regions\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 226.00,
+          "width": 561.00,
+          "x": 10.00,
+          "y": 494.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"a49f2b1d2407a009edd6\",\"layouts\":[{\"id\":0,\"position\":{\"x\":650.8237861429351,\"y\":9.078014184397162,\"z\":5000,\"width\":289.09983633387884,\"height\":186.44844517184941}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Calculations.Quantity all Territories\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Calculations\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Quantity all Territories\"},\"Name\":\"Calculations.Quantity all Territories\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Quantity all Territories\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 186.45,
+          "width": 289.10,
+          "x": 650.82,
+          "y": 9.08,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"b29a76365865de7055b2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":495.7992362247681,\"y\":307.2558647026732,\"z\":4000,\"width\":454.5990180032733,\"height\":318.4288052373158}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"City.Sales Territory\"},{\"queryRef\":\"Calculations.Total Quantity\"},{\"queryRef\":\"Calculations.Quantity all Territories\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Location\",\"Type\":0},{\"Name\":\"c1\",\"Entity\":\"Calculations\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Sales Territory\"},\"Name\":\"City.Sales Territory\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Property\":\"Total Quantity\"},\"Name\":\"Calculations.Total Quantity\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Property\":\"Quantity all Territories\"},\"Name\":\"Calculations.Quantity all Territories\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 318.43,
+          "width": 454.60,
+          "x": 495.80,
+          "y": 307.26,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"d987e2e9d96853a41493\",\"layouts\":[{\"id\":0,\"position\":{\"x\":379.18166939443535,\"y\":0,\"z\":2000,\"width\":247.20130932896888,\"height\":185.05182760501907}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Calculations.Total Quantity\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Calculations\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Total Quantity\"},\"Name\":\"Calculations.Total Quantity\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Total Quantity\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 185.05,
+          "width": 247.20,
+          "x": 379.18,
+          "y": 0.00,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"e4e6965024bdcd5b2ac2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":427.36497545008183,\"height\":318.4288052373158}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"Customer.Buying Group\",\"active\":true}],\"Values\":[{\"queryRef\":\"Calculations.Total Quantity\"}],\"Columns\":[{\"queryRef\":\"Calendar.Year\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c2\",\"Entity\":\"Customer\",\"Type\":0},{\"Name\":\"c1\",\"Entity\":\"Calculations\",\"Type\":0},{\"Name\":\"c\",\"Entity\":\"Calendar\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c2\"}},\"Property\":\"Buying Group\"},\"Name\":\"Customer.Buying Group\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Property\":\"Total Quantity\"},\"Name\":\"Calculations.Total Quantity\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Year\"},\"Name\":\"Calendar.Year\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 318.43,
+          "width": 427.36,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Sales Territory",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection9e73956ad67c0b129e00",
+      "ordinal": 9,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"2f6ecd06985088cdc672\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10.32258064516129,\"y\":381.93548387096774,\"z\":2000,\"width\":845.1612903225806,\"height\":309.6774193548387}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"Calendar.Fiscal Year\",\"active\":true},{\"queryRef\":\"Calendar.Month Name\",\"active\":true}],\"Values\":[{\"queryRef\":\"Calculations.Total Profit by SalesX\"},{\"queryRef\":\"Calculations.Sales Total Sum\"},{\"queryRef\":\"Calculations.Prior Year Sales\"},{\"queryRef\":\"Calculations.Prior Period\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c1\",\"Entity\":\"Calendar\",\"Type\":0},{\"Name\":\"c\",\"Entity\":\"Calculations\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Property\":\"Fiscal Year\"},\"Name\":\"Calendar.Fiscal Year\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Total Profit by SalesX\"},\"Name\":\"Calculations.Total Profit by SalesX\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Sales Total Sum\"},\"Name\":\"Calculations.Sales Total Sum\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Prior Year Sales\"},\"Name\":\"Calculations.Prior Year Sales\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Property\":\"Month Name\"},\"Name\":\"Calendar.Month Name\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Prior Period\"},\"Name\":\"Calculations.Prior Period\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"values\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 309.68,
+          "width": 845.16,
+          "x": 10.32,
+          "y": 381.94,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"5de1d6d0b1690e0039b8\",\"layouts\":[{\"id\":0,\"position\":{\"x\":999.7989949748743,\"y\":100.10050251256281,\"z\":1000,\"width\":279.79899497487435,\"height\":281.00502512562815}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Location.Sales Territory\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"l\",\"Entity\":\"Location\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"Sales Territory\"},\"Name\":\"Location.Sales Territory\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{}}]}}}",
+          "filters": "[]",
+          "height": 281.01,
+          "width": 279.80,
+          "x": 999.80,
+          "y": 100.10,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"e66c909130b7c30635d7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10,\"y\":0,\"width\":280,\"height\":280,\"z\":0}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Location.Sales Territory\"},{\"queryRef\":\"Calculations.RANKX Territory\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"l\",\"Entity\":\"Location\",\"Type\":0},{\"Name\":\"c\",\"Entity\":\"Calculations\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"Sales Territory\"},\"Name\":\"Location.Sales Territory\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"RANKX Territory\"},\"Name\":\"Calculations.RANKX Territory\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"RANKX Territory\"}}}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 280.00,
+          "width": 280.00,
+          "x": 10.00,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{\"relationships\":[{\"source\":\"aef5242bbbb007877dae\",\"target\":\"1b88e004e0a990e76444\",\"type\":3},{\"source\":\"1b88e004e0a990e76444\",\"target\":\"aef5242bbbb007877dae\",\"type\":3}]}",
+      "displayName": "Page 4",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSectionca7e1ef002191c10027d",
+      "ordinal": 11,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"1b88e004e0a990e76444\",\"layouts\":[{\"id\":0,\"position\":{\"x\":978.0645161290322,\"y\":94.19354838709677,\"z\":2000,\"width\":301.93548387096774,\"height\":150.96774193548387}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Location.State Province\",\"active\":true},{\"queryRef\":\"Location.Region\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"l\",\"Entity\":\"Location\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"Region\"},\"Name\":\"Location.Region\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"State Province\"},\"Name\":\"Location.State Province\"}]},\"expansionStates\":[{\"roles\":[\"Values\"],\"levels\":[{\"queryRefs\":[\"Location.State Province\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Location\"}},\"Property\":\"State Province\"}}],\"isPinned\":true},{\"queryRefs\":[\"Location.Region\"],\"isCollapsed\":true,\"isPinned\":true}],\"root\":{\"identityValues\":null,\"children\":[{\"identityValues\":[{\"Literal\":{\"Value\":\"'Alaska'\"}}],\"isToggled\":true}]}}],\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"l\",\"Entity\":\"Location\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"State Province\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'California'\"}}]]}}}]}}}}]},\"cachedFilterDisplayItems\":[{\"id\":{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Location\"}},\"Property\":\"State Province\"}},\"Right\":{\"Literal\":{\"Value\":\"'California'\"}}}}},\"displayName\":\"California\"}]}}",
+          "filters": "[]",
+          "height": 150.97,
+          "width": 301.94,
+          "x": 978.06,
+          "y": 94.19,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"519a7cdb4b2c36580090\",\"layouts\":[{\"id\":0,\"position\":{\"x\":527.741935483871,\"y\":157.41935483870967,\"z\":1000,\"width\":433.5483870967742,\"height\":518.7096774193549}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Calculations.All Selected City Sales\"},{\"queryRef\":\"Location.City\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Calculations\",\"Type\":0},{\"Name\":\"l\",\"Entity\":\"Location\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"All Selected City Sales\"},\"Name\":\"Calculations.All Selected City Sales\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"City\"},\"Name\":\"Location.City\"}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{}}}",
+          "filters": "[]",
+          "height": 518.71,
+          "width": 433.55,
+          "x": 527.74,
+          "y": 157.42,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"aef5242bbbb007877dae\",\"layouts\":[{\"id\":0,\"position\":{\"x\":67.09677419354838,\"y\":157.41935483870967,\"z\":0,\"width\":433.5483870967742,\"height\":518.7096774193549}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Location.Sales Territory\"},{\"queryRef\":\"Calculations.ALL Sales\"},{\"queryRef\":\"Products.Color\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"l\",\"Entity\":\"Location\",\"Type\":0},{\"Name\":\"c\",\"Entity\":\"Calculations\",\"Type\":0},{\"Name\":\"p\",\"Entity\":\"Products\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"Sales Territory\"},\"Name\":\"Location.Sales Territory\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"ALL Sales\"},\"Name\":\"Calculations.ALL Sales\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Color\"},\"Name\":\"Products.Color\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"values\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 518.71,
+          "width": 433.55,
+          "x": 67.10,
+          "y": 157.42,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Calculated Groups",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSectiondd485fa060649904d013",
+      "ordinal": 8,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"58d8fc47141b4e9b5640\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":34.83870967741935,\"z\":0,\"width\":952.258064516129,\"height\":396.1290322580645}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"Calendar.Year Month\",\"active\":true}],\"Values\":[{\"queryRef\":\"Calculations.Sales And Tax\"}],\"Columns\":[{\"queryRef\":\"Date Intelligence.Date Intelligence\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Calendar\",\"Type\":0},{\"Name\":\"c1\",\"Entity\":\"Calculations\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"Date Intelligence\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Year Month\"},\"Name\":\"Calendar.Year Month\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Date Intelligence\"},\"Name\":\"Date Intelligence.Date Intelligence\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Property\":\"Sales And Tax\"},\"Name\":\"Calculations.Sales And Tax\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"rowHeaders\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}],\"columnHeaders\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}}}}],\"values\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 396.13,
+          "width": 952.26,
+          "x": 0.00,
+          "y": 34.84,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"6c82a7d756e336945a83\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":431,\"width\":510,\"height\":289,\"z\":1000}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"Calendar.Year Month\",\"active\":true}],\"Columns\":[{\"queryRef\":\"Quantity Intelligence.Quantity\",\"active\":true}],\"Values\":[{\"queryRef\":\"Calculations.Quantity all Territories\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Calendar\",\"Type\":0},{\"Name\":\"q\",\"Entity\":\"Quantity Intelligence\",\"Type\":0},{\"Name\":\"c1\",\"Entity\":\"Calculations\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Year Month\"},\"Name\":\"Calendar.Year Month\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"q\"}},\"Property\":\"Quantity\"},\"Name\":\"Quantity Intelligence.Quantity\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Property\":\"Quantity all Territories\"},\"Name\":\"Calculations.Quantity all Territories\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 289.00,
+          "width": 510.00,
+          "x": 0.00,
+          "y": 431.00,
+          "z": 1000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Filtering",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSectionfc2d42ebd204a85652bc",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"2bc46f11c34367219009\",\"layouts\":[{\"id\":0,\"position\":{\"x\":489.95215311004785,\"y\":120.03827751196172,\"z\":1000,\"width\":300.0956937799043,\"height\":167.80861244019138,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"City.Sales Territory\"},{\"queryRef\":\"Calculations.Sales Total Sum\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Calculations\",\"Type\":0},{\"Name\":\"c1\",\"Entity\":\"Location\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Sales Total Sum\"},\"Name\":\"Calculations.Sales Total Sum\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Property\":\"Sales Territory\"},\"Name\":\"City.Sales Territory\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 167.81,
+          "width": 300.10,
+          "x": 489.95,
+          "y": 120.04,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"4741d5afd0095e44ad63\",\"layouts\":[{\"id\":0,\"position\":{\"x\":777.4415405777166,\"y\":384.2640990371389,\"z\":6000,\"width\":502.11829436038516,\"height\":234.71801925722147,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Location.Sales Territory\"},{\"queryRef\":\"Calculations.Filter NY and Great Lakes Sales\"},{\"queryRef\":\"Calculations.Calculate NY and Great Lakes Sales\"},{\"queryRef\":\"Calculations.Filter Count Product\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"l\",\"Entity\":\"Location\",\"Type\":0},{\"Name\":\"c\",\"Entity\":\"Calculations\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"Sales Territory\"},\"Name\":\"Location.Sales Territory\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Calculate NY and Great Lakes Sales\"},\"Name\":\"Calculations.Calculate NY and Great Lakes Sales\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Filter Count Product\"},\"Name\":\"Calculations.Filter Count Product\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Filter NY and Great Lakes Sales\"},\"Name\":\"Calculations.Filter NY and Great Lakes Sales\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Calculate NY and Great Lakes Sales\"}}}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"112.93261498237135D\"}}}},\"selector\":{\"metadata\":\"Location.Sales Territory\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"105.07816028205839D\"}}}},\"selector\":{\"metadata\":\"Calculations.Calculate NY and Great Lakes Sales\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"101.87600522917243D\"}}}},\"selector\":{\"metadata\":\"Calculations.Filter NY and Great Lakes Sales\"}}]}}}",
+          "filters": "[]",
+          "height": 234.72,
+          "width": 502.12,
+          "x": 777.44,
+          "y": 384.26,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"5711c3050100a070ba3e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":101.66507177033493,\"z\":4000,\"width\":531.5980861244019,\"height\":335.61722488038276,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"City.Sales Territory\"},{\"queryRef\":\"City.State Province\"},{\"queryRef\":\"Calculations.Calculate NY and Great Lakes Sales\"},{\"queryRef\":\"Calculations.Filter ALL Great Lakes Sales\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Calculations\",\"Type\":0},{\"Name\":\"c1\",\"Entity\":\"Location\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Property\":\"Sales Territory\"},\"Name\":\"City.Sales Territory\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Property\":\"State Province\"},\"Name\":\"City.State Province\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Calculate NY and Great Lakes Sales\"},\"Name\":\"Calculations.Calculate NY and Great Lakes Sales\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Filter ALL Great Lakes Sales\"},\"Name\":\"Calculations.Filter ALL Great Lakes Sales\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"123.1861471861472D\"}}}},\"selector\":{\"metadata\":\"Calculations.Calculate NY and Great Lakes Sales\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"100.18179680208131D\"}}}},\"selector\":{\"metadata\":\"Calculations.Filter ALL Great Lakes Sales\"}}]}}}",
+          "filters": "[]",
+          "height": 335.62,
+          "width": 531.60,
+          "x": 0.00,
+          "y": 101.67,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"a38550537d0446a64de0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":15.483870967741934,\"y\":452.9032258064516,\"z\":3000,\"width\":744.516129032258,\"height\":267.09677419354836,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"Location.Sales Territory\",\"active\":true},{\"queryRef\":\"Location.State Province\"}],\"Values\":[{\"queryRef\":\"Calculations.All City Sales\"},{\"queryRef\":\"Calculations.Remove Filter\"},{\"queryRef\":\"Calculations.KeepFilters ALL NY and Great Lakes Sales\"},{\"queryRef\":\"Calculations.All Selected City Sales\"},{\"queryRef\":\"Calculations.Max Amount for City\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Calculations\",\"Type\":0},{\"Name\":\"c1\",\"Entity\":\"Location\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Property\":\"Sales Territory\"},\"Name\":\"Location.Sales Territory\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"All City Sales\"},\"Name\":\"Calculations.All City Sales\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Remove Filter\"},\"Name\":\"Calculations.Remove Filter\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"KeepFilters ALL NY and Great Lakes Sales\"},\"Name\":\"Calculations.KeepFilters ALL NY and Great Lakes Sales\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"All Selected City Sales\"},\"Name\":\"Calculations.All Selected City Sales\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Max Amount for City\"},\"Name\":\"Calculations.Max Amount for City\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Property\":\"State Province\"},\"Name\":\"Location.State Province\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"All Selected City Sales\"}}}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"128.62628981606102D\"}}}},\"selector\":{\"metadata\":\"Calculations.KeepFilters ALL NY and Great Lakes Sales\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"94.35262449528938D\"}}}},\"selector\":{\"metadata\":\"City.State Province\"}}]}}}",
+          "filters": "[]",
+          "height": 267.10,
+          "width": 744.52,
+          "x": 15.48,
+          "y": 452.90,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"ae90db89117a22348e08\",\"layouts\":[{\"id\":0,\"position\":{\"x\":805.9712918660288,\"y\":86.96650717703349,\"z\":5000,\"width\":280.4976076555024,\"height\":320.91866028708137,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"City.Sales Territory\"},{\"queryRef\":\"Calculations.Filter ALL Great Lakes Sales\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Calculations\",\"Type\":0},{\"Name\":\"c1\",\"Entity\":\"Location\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Filter ALL Great Lakes Sales\"},\"Name\":\"Calculations.Filter ALL Great Lakes Sales\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Property\":\"Sales Territory\"},\"Name\":\"City.Sales Territory\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Filter ALL Great Lakes Sales\"}}}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"105.50919694930462D\"}}}},\"selector\":{\"metadata\":\"Calculations.Filter ALL Great Lakes Sales\"}}]}}}",
+          "filters": "[]",
+          "height": 320.92,
+          "width": 280.50,
+          "x": 805.97,
+          "y": 86.97,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"e32d1a7c81c5461be444\",\"layouts\":[{\"id\":0,\"position\":{\"x\":15.923444976076555,\"y\":0,\"z\":2000,\"width\":975.0047846889952,\"height\":101.66507177033493,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"multiRowCard\",\"projections\":{\"Values\":[{\"queryRef\":\"Calculations.Filter ALL Great Lakes Sales\"},{\"queryRef\":\"Calculations.Great Lakes Sales Filter\"},{\"queryRef\":\"Calculations.Great Lakes Sales\"},{\"queryRef\":\"Calculations.All Selected City Sales\"},{\"queryRef\":\"Calculations.All City Sales\"},{\"queryRef\":\"Calculations.Remove Filter\"},{\"queryRef\":\"Calculations.ALL Sales\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Calculations\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Great Lakes Sales Filter\"},\"Name\":\"Calculations.Great Lakes Sales Filter\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Great Lakes Sales\"},\"Name\":\"Calculations.Great Lakes Sales\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"All Selected City Sales\"},\"Name\":\"Calculations.All Selected City Sales\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"All City Sales\"},\"Name\":\"Calculations.All City Sales\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Remove Filter\"},\"Name\":\"Calculations.Remove Filter\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"ALL Sales\"},\"Name\":\"Calculations.ALL Sales\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Filter ALL Great Lakes Sales\"},\"Name\":\"Calculations.Filter ALL Great Lakes Sales\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Filter ALL Great Lakes Sales\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{}}}",
+          "filters": "[]",
+          "height": 101.67,
+          "width": 975.00,
+          "x": 15.92,
+          "y": 0.00,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"e968c8237d0a7510ba20\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1074.5529573590097,\"y\":68.33562585969739,\"z\":0,\"width\":205.00687757909216,\"height\":211.939477303989,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"City.Sales Territory\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Location\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Sales Territory\"},\"Name\":\"City.Sales Territory\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"l\",\"Entity\":\"Location\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"Sales Territory\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Great Lakes'\"}}]]}}}]}}}}]}}}",
+          "filters": "[]",
+          "height": 211.94,
+          "width": 205.01,
+          "x": 1074.55,
+          "y": 68.34,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}
